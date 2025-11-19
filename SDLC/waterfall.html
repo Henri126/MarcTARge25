@@ -3,106 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waterfall Development Model</title>
+    <title>Kosemudel</title>
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav class="navbar">
-        <div class="navbarContainer">
-            <a href="../../../index.html" class="nimi">Marcus Grünberg</a>
-        </div>
-
-        <ul class="navbarMenu">
-            <li class="navbarItem">
-                <a href="../../../index.html" class="navbarLinks">Minust</a>
-            </li>
-            <p class="navbarItemSeperator">|</p>
-            <div class="navbarItem">
-                <div class="navbarDropdown">
-                    <a href="../../..//konspektid/konspektid.html" class="navbarLinks">Konspektid</a>
-                    <div class="navbarDropdownLinks">
-                        <a href="../../../konspektid/tarkvara_arendusprotsessid/TAindex.html" class="navbarDropdownLink">Tarkvara Arendusprotsess</a>
-                        <a href="" class="navbarDropdownLink">Riistvara</a>
-                        <a href="" class="navbarDropdownLink">Programmeerimise alused</a>
-                    </div>
-                </div>
-            </div>
-            <p class="navbarItemSeperator">|</p>
-            <li class="navbarItem">
-                <a href="" class="navbarLinks">Tööd</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="mainContent">
-        <a href="../../../konspektid/tarkvara_arendusprotsessid/elutsykkel/elutsykkel.index.html" class="modelLink">Tagasiminek</a>
-
-        <h1>Waterfall mudel</h1>
-
-        <p>Waterfall mudel on vanim ja enim kritiseeritud protsessimudel. Selle kirjeldas Winston W. Royce aastal 1970. Mudeli põhimõte on, et tegevused toimuvad järjestikku eraldi etappides. Royce jagas etapid järgmiselt:</p>
-        
-        <section>
-            <h2>Protsessi etapid</h2>
-            <ul>
-                <li>
-                    <h3>Nõuete määratlemine</h3>
-                    <p>Jaguneb kaheks osaks: süsteemianalüüs (kõik, mis ümbritseb konkreetset tarkvara) ja nõuete analüüs. Süsteemi käitumine, jõudlus, liidesed jne dokumenteeritakse.</p>
-                </li>
-                <li>
-                    <h3>Süsteemi ja tarkvara disain</h3>
-                    <p>Keskendutakse põhiprogrammi omadustele, nagu andmestruktuurid, tarkvara arhitektuur, liideste spetsifikatsioonid ning protseduurilised ja algoritmilised detailid. Projekti kvaliteeti saab hinnata. Tulemused dokumenteeritakse.</p>
-                </li>
-                <li>
-                    <h3>Teostus ja moodulitestimine</h3>
-                    <p>Projekti kirjeldatud süsteem programmeeritakse moodulite ja programmide kogumina, mida testitakse eraldi. Mida detailsem projekt, seda lihtsam ja mehhaanilisem saab olema teostusetapp.</p>
-                </li>
-                <li>
-                    <h3>Integratsioon ja süsteemi testimine</h3>
-                    <p>Programmid ja moodulid integreeritakse ning testitakse terviksüsteemina. Pärast testimist tarnitakse toode kliendile. Testimine keskendub loogilistele detailidele ja sellele, kas süsteem vastab funktsionaalsetele nõuetele.</p>
-                </li>
-                <li>
-                    <h3>Kasutamine ja hooldus</h3>
-                    <p>See on tavaliselt kõige pikem etapp. Süsteemi muudetakse, kui kasutajad avastavad vigu, keskkond ja töötingimused muutuvad või klient soovib uut funktsionaalsust. See etapp kordab kõiki eelnevaid etappe olemasoleva süsteemi muutmise kontekstis.</p>
-                </li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Pilt ja tabel</h2>
-            <img src="../../../pildid/waterfall.jpeg" alt="Koskmudel" style="max-width: 100%; height: auto;">
-            <table border="1" cellpadding="8" style="margin-top: 20px; width: 100%; border-collapse: collapse;">
-                <thead>
-                    <tr>
-                        <th style="background-color: beige;">Plussid</th>
-                        <th style="background-color: beige;">Miinused</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mudelil on selge struktuur</td>
-                        <td>Muudatusi on raske rakendada</td>
-                    </tr>
-                    <tr>
-                        <td>Seab lõppeesmärgid varakult</td>
-                        <td>Projekti kestus on pikem</td>
-                    </tr>
-                    <tr>
-                        <td>Edastab teavet hästi</td>
-                        <td>Klient võib projekti käigus meelt muuta</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        
-        <section>
-            <h2>Viited</h2>
-            <p>Siin on allikad, mida kasutasin koskmudeli plusside ja miinuste kohta info saamiseks:</p>
-            <a href="https://www.lucidchart.com/blog/pros-and-cons-of-waterfall-methodology" target="_blank" class="modelLink">Informatsioon hea ja halva külgede kohta</a>
-            <br>
-            <br>
-            <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html" target="_blank" class="modelLink">Informatsioon koskmudeli kohta</a>
-        </section>
-    </div>
+    <a href="../index.html">Tagasi</a>
+    <h1>Kosemudel</h1><br/>
+    <p>
+            Kosemudel (ehk waterfall) on üks esimesi tarkvaraarenduse elutsükli mudeleid. Ta põhineb tavalise <br/>
+        tootmisprotsessi eeskujul, kus iga etapp eelneb järgmisele. Tagasipöördumine eelmisesse etappi on <br/>
+        keeruline ning kui eelnevas etapis avastatakse viga, tähendab see seda, et vea juurde saab tagasi<br/>
+        tulla alles siis kui tarkvara on kasutusse läinud.<br/>
+    </p>
+    <h2>Kosemudeli etapid:</h2><br/>
+    <p>
+            Kosemudel koosneb viiest etapist, mis rahuldab kõik üldise tarkvaraarenduse elutsükli etappe.<br/>
+        Nendeks on: Nõuete määratlemine, Süsteemi ja Tarkvara kavandamine, Teostus ning moodulite testimine, <br/>
+        Integratsioon ja süsteemi testimine ning kasutamine ja hooldus.<br/><br/>
+    </p>
+    <h3>1. Etapp - Nõuete Määratlemine</h3><br/>
+    <p>
+            Siin etapis dokumenteeritakse arendatava toote või süsteemi nõuded, käitumine, sihtriistvara jms.<br/>
+        Vahest jaotatakse see etapp kaheks - Süsteemi analüüs ja nõuete analüüs.<br/><br/>
+    </p>
+    <h3>2. Etapp - Süsteemi ja Tarkvara kavandamine</h3><br/>
+    <p>
+            Teises etapis kavandatakse arendusele mineva tarkvaratoote süsteem ja struktuur, keskendudes selle<br/>
+        funktsionaalsetele omadustele. Need võivad olla erinevad Andmestruktuurid, toote enda arhitektuur, erinevad<br/>
+        liidesed, nende liideste omadused ja muud algorütmilised detailid. Kavandamise tulemused dokumenteeritakse,<br/>
+        ning mille järgi hiljem teostuses hinnatakse projekti kvaliteeti - Mida rohkem kavandist on tehtud, seda<br/>
+        rohkem on projektist valminud.<br/><br/>
+    </p>
+    <h3>3. Etapp - Teostus ning moodulite testimine</h3><br/>
+    <p>
+            Eelnevalt valminud kavandi järgi toimub selles etapis toote arendus. Arendustöö käigus arendatakse<br/>
+        programm moodulhaaval või moodulite kogumikuna. Peale arendustööd testitakse valmissanud mooduleid ja<br/>
+        moodulikogumikke. Olenevalt eelnevalt dokumenteeritud kavandi detailsusest tuleneb nüüd selles etapis<br/>
+        projekti arenduslihtsus. Mida rohkem on detaile kavandatud, seda lihtsam on arendustöö.<br/><br/>
+    </p>
+    <h3>4. Etapp - Integratsioon ja süsteemi testimine</h3><br/>
+    <p>
+            Toimub kogu valmissaadud tarkvarasüsteemi testimine. Peale testimist tarnitakse toode kliendile ja/või <br/>
+        sihtrühmale. Testitakse seelest vaatepunktist, kas süsteem teb seda mis eelnevalt dokumenteeritud ning<br/>
+        testitakse ka et süsteemis olevad erinevad detailid on loogilised.<br/><br/>
+    </p>
+    <h3>5. Etapp - Kasutamine ja hooldus</h3><br/>
+    <p>
+            Tegu on kõige pikema tarkvara elutsüklis oleva etapiga. Siin toimub vigade parandus, funktsionaalsuse<br/>
+            muutmine (kas siis kliendi, turu, keskkonna või sihtyrühma sisendi tagajärjel või vajadusena) ja koodi<br/>
+            enda refaktoreerimine.<br/> Arendustöö teostamiseks korratakse kõiki eelmiseid etappe kuid siis ainult <br/>
+            süsteemi muutmise tarbeks mitte enam nullist millegi uue arendamise jaoks.<br/><br/>
+    </p><br/>
+    <p>
+        Iga etapi tulemusena tekib dokument või dokumentatsioon (üks või mitu) mis kirjeldab vastavas etapis <br/>
+        saavutatud tulemit. Kõik dokumendid kinnitatakse. Järgmine etapp ei tohi olla samaaegselt töös kui<br/>
+        eelmine pole lõpetatud. Kuigi ülekate mingisugune siiski on, ning info edastatakse ühest etapist järgmisesse<br/>
+        edasi.<br/><br/>
+    </p>
+    <h2>Arendusmudeli joonis:</h2>
+    <img src="../pildid/kosemudel.jpeg"/>
+    <br/><br/>
+    <h2>Arendusmudel head ja vead:</h2>
+    <table>
+        <tr>
+            <th>Head küljed:</th>
+            <th>Halvad küljed:</th>
+        </tr>
+        <tr>
+            <td>Struktuur on väga selge</td>
+            <td>Kohandumine muutustega on väga halb</td>
+        </tr>
+        <tr>
+            <td>Dokumentatsioon on tugev, jätab maha iga sammuga dokumente, mis aitab koordineerida.</td>
+            <td>Klient näeb süsteemi alles lõpus, millal on juba liiga hilja ümber asju teha</td>
+        </tr>
+        <tr>
+            <td>Sobib stabiilsete nõuetega projektidele, kus on kirjas mida on täpselt vaja.</td>
+            <td>Projekt on aeglane, sest tiimid ei saa koos väga paindlikult töötada</td>
+        </tr>
+    </table>
+    <p>
+        Viited infole:
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html">eõpearhiiv</a>
+    </p>
 </body>
 </html>
